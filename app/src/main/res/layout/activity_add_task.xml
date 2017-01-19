@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.task.harmeet.projectmanage.AddTask"
+    android:background="@android:color/holo_blue_dark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add Task"
+        android:id="@+id/textViewAddTask"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/edt_task_client_name"
+        android:hint="name"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/textViewAddTask"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task Client"
+        android:id="@+id/textViewTaskClient"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:typeface="serif"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:layout_alignBottom="@+id/edt_task_client_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMP"
+        android:id="@+id/radioButtonIMP"
+        android:layout_marginTop="2dp"
+        android:checked="true"
+        android:layout_below="@+id/textViewTaskClient"
+        android:layout_toLeftOf="@+id/edt_task_client_name"
+        android:layout_toStartOf="@+id/edt_task_client_name" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not IMP"
+        android:id="@+id/radioButtonNotImp"
+        android:layout_alignTop="@+id/radioButtonIMP"
+        android:layout_alignLeft="@+id/textViewAddTask"
+        android:layout_alignStart="@+id/textViewAddTask"
+        android:checked="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextTask"
+        android:hint="Task"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextAssignTask"
+        android:hint="Assign Task"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_below="@+id/editTextTask"
+        android:layout_alignLeft="@+id/editTextTask"
+        android:layout_alignStart="@+id/editTextTask"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextAbouttask"
+        android:layout_below="@+id/editTextAssignTask"
+        android:layout_alignLeft="@+id/editTextAssignTask"
+        android:layout_alignStart="@+id/editTextAssignTask"
+        android:hint="About Task"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editDateTime"
+        android:layout_below="@+id/editTextAssignTask"
+        android:layout_alignLeft="@+id/editTextAssignTask"
+        android:layout_alignStart="@+id/editTextAssignTask"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/buttonSave"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textViewTaskClient"
+        android:layout_toEndOf="@+id/textViewTaskClient"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_light"
+        android:typeface="serif" />
+
+
+    <!-- <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:layout_below="@+id/editText13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />-->
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_selected_project_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Project Name"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_selected_client_name"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Client Name"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/txt_selected_deve_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Developer Name"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/txt_selected_contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Contact Number"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            />
+
+
+        <TextView
+            android:id="@+id/txt_selected_ammount_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Ammount"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/txt_selected_about"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Aboutus"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            />
+
+    </LinearLayout>
+</LinearLayout>
